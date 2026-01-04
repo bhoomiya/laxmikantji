@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Insights and Thought Leadership by Dr. Lakshmikant Pandey.">
+    <title>Insights | SEEDMAN®</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50: '#f6f7f6', 100: '#e3e8e5', 200: '#c5d2cc', 300: '#9cb3a8', 400: '#739586', 500: '#537a6b', 600: '#406054', 700: '#354d44', 800: '#2d3f38', 900: '#263530' },
+                        stone: { 50: '#fafaf9', 850: '#1f1d1b' }
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], heading: ['"Bricolage Grotesque"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navs -->
+    <nav class="nav-vertical">
+        <a href="index.html" class="nav-item" aria-label="Home">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Home</span>
+        </a>
+        <a href="profile.html" class="nav-item" aria-label="Profile">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Profile</span>
+        </a>
+        <a href="work.html" class="nav-item" aria-label="Work">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Work</span>
+        </a>
+        <a href="insights.html" class="nav-item active" aria-label="Insights">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Insights</span>
+        </a>
+        <a href="contact.html" class="nav-item" aria-label="Contact">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Contact</span>
+        </a>
+    </nav>
+    <nav class="nav-mobile">
+        <a href="index.html" class="dock-item"><i data-lucide="home" class="w-5 h-5"></i><span>Home</span></a>
+        <a href="profile.html" class="dock-item"><i data-lucide="user" class="w-5 h-5"></i><span>Profile</span></a>
+        <a href="work.html" class="dock-item"><i data-lucide="briefcase" class="w-5 h-5"></i><span>Work</span></a>
+        <a href="insights.html" class="dock-item active"><i data-lucide="file-text"
+                class="w-5 h-5"></i><span>Insights</span></a>
+        <a href="contact.html" class="dock-item"><i data-lucide="mail" class="w-5 h-5"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="fixed top-6 left-6 md:top-8 md:left-12 z-50">
+        <a href="index.html"
+            class="text-xl md:text-2xl font-bold font-heading text-sage-900 tracking-tighter">SEEDMAN<span
+                class="text-amber-500">®</span></a>
+    </div>
+
+    <!-- Insights -->
+    <section class="py-32 bg-stone-50 min-h-screen">
+        <div class="container mx-auto px-6">
+            <div class="flex justify-between items-end mb-12 px-2 reveal">
+                <div>
+                    <span class="text-sage-600 font-bold tracking-widest uppercase text-xs">Thought Leadership</span>
+                    <h1 class="text-4xl md:text-5xl font-heading font-bold text-sage-900 mt-2">Latest Insights</h1>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Blog 1 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+                    <div class="h-48 overflow-hidden"><img
+                            src="https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                            alt="Hybrid Seeds"></div>
+                    <div class="p-8">
+                        <span class="text-amber-600 text-xs font-bold uppercase">Technology</span>
+                        <h3 class="text-xl font-bold text-sage-900 mt-2 mb-3">The Future of Hybrid Seeds</h3>
+                        <p class="text-stone-500 text-sm mb-6 line-clamp-3">Hybrids are not just about yield; they are
+                            about resilience.</p>
+                        <button onclick="openBlog('hybrid-seeds')"
+                            class="text-sage-700 font-bold text-sm uppercase tracking-wide hover:text-amber-600 transition-colors flex items-center gap-2">Read
+                            Article <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+                <!-- Blog 2 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+                    <div class="h-48 overflow-hidden"><img
+                            src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                            alt="Supply Chain"></div>
+                    <div class="p-8">
+                        <span class="text-amber-600 text-xs font-bold uppercase">Strategy</span>
+                        <h3 class="text-xl font-bold text-sage-900 mt-2 mb-3">Supply Chain Resilience</h3>
+                        <p class="text-stone-500 text-sm mb-6 line-clamp-3">From farm to fork, the value chain is
+                            fragile.</p>
+                        <button onclick="openBlog('supply-chain')"
+                            class="text-sage-700 font-bold text-sm uppercase tracking-wide hover:text-amber-600 transition-colors flex items-center gap-2">Read
+                            Article <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+                <!-- Blog 3 -->
+                <div
+                    class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 group reveal">
+                    <div class="h-48 overflow-hidden"><img
+                            src="https://images.unsplash.com/photo-1589923188900-85dae523342b?auto=format&fit=crop&q=80&w=800"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                            alt="Organic Farming"></div>
+                    <div class="p-8">
+                        <span class="text-amber-600 text-xs font-bold uppercase">Sustainability</span>
+                        <h3 class="text-xl font-bold text-sage-900 mt-2 mb-3">Scaling Organic Farming</h3>
+                        <p class="text-stone-500 text-sm mb-6 line-clamp-3">Organic is no longer a niche; it's a
+                            necessity.</p>
+                        <button onclick="openBlog('organic-farming')"
+                            class="text-sage-700 font-bold text-sm uppercase tracking-wide hover:text-amber-600 transition-colors flex items-center gap-2">Read
+                            Article <i data-lucide="arrow-up-right" class="w-4 h-4"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button
+                    class="px-8 py-3 border border-sage-300 text-sage-700 font-bold rounded-full hover:bg-sage-50 transition-colors">Browse
+                    More Research</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Modal -->
+    <div id="blog-modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeBlog()"><i data-lucide="x"
+                    class="w-6 h-6 text-stone-800"></i></button>
+            <div id="blog-body" class="p-8 md:p-12 overflow-y-auto"><!-- Content --></div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

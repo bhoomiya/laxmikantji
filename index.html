@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Official portfolio of Dr. Lakshmikant Pandey (SEEDMAN®). A visionary leader in Global Bio-Agri Business.">
+    <title>Home | SEEDMAN® | Dr. Lakshmikant Pandey</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50: '#f6f7f6', 100: '#e3e8e5', 200: '#c5d2cc', 300: '#9cb3a8', 400: '#739586', 500: '#537a6b', 600: '#406054', 700: '#354d44', 800: '#2d3f38', 900: '#263530' },
+                        stone: { 50: '#fafaf9', 850: '#1f1d1b' }
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], heading: ['"Bricolage Grotesque"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="scroll-progress"></div>
+
+    <!-- Vertical Nav (Desktop) -->
+    <nav class="nav-vertical">
+        <a href="index.html" class="nav-item active" aria-label="Home">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Home</span>
+        </a>
+        <a href="profile.html" class="nav-item" aria-label="Profile">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Profile</span>
+        </a>
+        <a href="work.html" class="nav-item" aria-label="Work">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Work</span>
+        </a>
+        <a href="insights.html" class="nav-item" aria-label="Insights">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Insights</span>
+        </a>
+        <a href="contact.html" class="nav-item" aria-label="Contact">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Contact</span>
+        </a>
+    </nav>
+
+    <!-- Mobile Nav Dock -->
+    <nav class="nav-mobile">
+        <a href="index.html" class="dock-item active">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span>Home</span>
+        </a>
+        <a href="profile.html" class="dock-item">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span>Profile</span>
+        </a>
+        <a href="work.html" class="dock-item">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <span>Work</span>
+        </a>
+        <a href="insights.html" class="dock-item">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            <span>Insights</span>
+        </a>
+        <a href="contact.html" class="dock-item">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+            <span>Contact</span>
+        </a>
+    </nav>
+
+    <!-- Brand Logo Top Left -->
+    <div class="fixed top-6 left-6 md:top-8 md:left-12 z-50">
+        <a href="index.html"
+            class="text-xl md:text-2xl font-bold font-heading text-white tracking-tighter drop-shadow-md">
+            SEEDMAN<span class="text-amber-500">®</span>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="h-screen w-full relative flex items-center bg-stone-900 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?auto=format&fit=crop&q=80&w=1920"
+                class="carousel-fade active" alt="Agriculture">
+            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?auto=format&fit=crop&q=80&w=1920"
+                class="carousel-fade" alt="Fields">
+            <img src="https://images.unsplash.com/photo-1495107334309-fcf20504a5ab?auto=format&fit=crop&q=80&w=1920"
+                class="carousel-fade" alt="Nature">
+            <div class="absolute inset-0 bg-gradient-to-r from-stone-900/80 via-stone-900/40 to-transparent"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 pt-20">
+            <div class="max-w-4xl pl-0 md:pl-6">
+                <span
+                    class="inline-block py-1 px-3 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30 text-xs font-bold tracking-widest uppercase mb-6 reveal">
+                    Global Bio-Agri Business Leader
+                </span>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight reveal">
+                    SEEDMAN<span class="text-amber-500">®</span><br>
+                    <span
+                        class="text-3xl md:text-5xl lg:text-6xl text-stone-200 font-light block mt-2 typing-cursor typewriter-text"></span>
+                </h1>
+                <p class="text-lg md:text-xl text-stone-200 max-w-2xl mb-10 leading-relaxed text-balanced reveal">
+                    Over two decades of excellence in driving Concept to Consumer (C2C) strategies, managing
+                    multimillion-dollar P&Ls, and pioneering sustainable innovations in the global seed industry.
+                </p>
+                <div class="flex flex-wrap gap-4 reveal">
+                    <a href="profile.html"
+                        class="magnetic px-8 py-4 bg-amber-600 hover:bg-amber-500 text-white font-bold rounded-full transition-all shadow-lg shadow-amber-900/20">
+                        Explore My Journey
+                    </a>
+                    <a href="contact.html"
+                        class="magnetic px-8 py-4 bg-white/10 hover:bg-white/20 text-white border border-white/20 font-bold rounded-full backdrop-blur-md transition-all">
+                        Get in Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

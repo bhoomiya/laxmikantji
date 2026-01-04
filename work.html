@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Key Initiatives and Projects by Dr. Lakshmikant Pandey.">
+    <title>Work | SEEDMAN®</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50: '#f6f7f6', 100: '#e3e8e5', 200: '#c5d2cc', 300: '#9cb3a8', 400: '#739586', 500: '#537a6b', 600: '#406054', 700: '#354d44', 800: '#2d3f38', 900: '#263530' },
+                        stone: { 50: '#fafaf9', 850: '#1f1d1b' }
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], heading: ['"Bricolage Grotesque"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navs -->
+    <nav class="nav-vertical">
+        <a href="index.html" class="nav-item" aria-label="Home">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Home</span>
+        </a>
+        <a href="profile.html" class="nav-item" aria-label="Profile">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Profile</span>
+        </a>
+        <a href="work.html" class="nav-item active" aria-label="Work">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Work</span>
+        </a>
+        <a href="insights.html" class="nav-item" aria-label="Insights">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Insights</span>
+        </a>
+        <a href="contact.html" class="nav-item" aria-label="Contact">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Contact</span>
+        </a>
+    </nav>
+    <nav class="nav-mobile">
+        <a href="index.html" class="dock-item"><i data-lucide="home" class="w-5 h-5"></i><span>Home</span></a>
+        <a href="profile.html" class="dock-item"><i data-lucide="user" class="w-5 h-5"></i><span>Profile</span></a>
+        <a href="work.html" class="dock-item active"><i data-lucide="briefcase"
+                class="w-5 h-5"></i><span>Work</span></a>
+        <a href="insights.html" class="dock-item"><i data-lucide="file-text"
+                class="w-5 h-5"></i><span>Insights</span></a>
+        <a href="contact.html" class="dock-item"><i data-lucide="mail" class="w-5 h-5"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="fixed top-6 left-6 md:top-8 md:left-12 z-50">
+        <a href="index.html"
+            class="text-xl md:text-2xl font-bold font-heading text-sage-900 tracking-tighter">SEEDMAN<span
+                class="text-amber-500">®</span></a>
+    </div>
+
+    <!-- Initiatives -->
+    <section class="py-32 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="mb-12 reveal">
+                <span class="text-amber-600 font-bold tracking-widest uppercase text-xs">Innovation</span>
+                <h1 class="text-4xl md:text-5xl font-heading font-bold text-sage-900 mt-2">Key Initiatives</h1>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer reveal">
+                    <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        alt="Climate Resilient Seeds">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-sage-900/90 via-sage-900/40 to-transparent p-8 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-bold uppercase mb-2">R&D • Ananya Seeds</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Climate Resilient Seeds</h3>
+                        <p
+                            class="text-stone-200 text-sm opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            Developing hybrids withstand extreme weather patterns.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer reveal">
+                    <img src="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        alt="Supply Chain">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-sage-900/90 via-sage-900/40 to-transparent p-8 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-bold uppercase mb-2">Strategy • Global</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">C2C Value Chain</h3>
+                        <p
+                            class="text-stone-200 text-sm opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            Optimizing the flow from seed concept to final consumer.</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="group relative overflow-hidden rounded-2xl aspect-[4/3] cursor-pointer reveal">
+                    <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&q=80&w=800"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        alt="Advisory">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-sage-900/90 via-sage-900/40 to-transparent p-8 flex flex-col justify-end">
+                        <span class="text-amber-400 text-xs font-bold uppercase mb-2">Partnership • Public Sector</span>
+                        <h3 class="text-2xl font-bold text-white mb-2">Global Bio-Agri</h3>
+                        <p
+                            class="text-stone-200 text-sm opacity-0 transform translate-y-4 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300">
+                            Collaboration with IFPRI, ICRISAT, and ICAR.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-24 bg-sage-900 text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 reveal">
+                <span class="text-amber-500 font-bold tracking-widest uppercase text-xs">Field Research & Events</span>
+                <h2 class="text-4xl md:text-5xl font-heading font-bold text-white mt-2">Moments of Impact</h2>
+                <p class="text-sage-200 max-w-2xl mx-auto mt-4">Witnessing the transformation of agriculture across the
+                    globe, one field at a time.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal"><img
+                        src="https://images.unsplash.com/photo-1605000797499-95a51c5269ae?auto=format&fit=crop&q=80&w=800"
+                        alt="Field Inspection">
+                    <div class="gallery-overlay">
+                        <h4 class="font-bold text-lg">Field Inspection</h4>
+                        <p class="text-sm text-sage-200">Evaluating hybrid performance.</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal"><img
+                        src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?auto=format&fit=crop&q=80&w=800"
+                        alt="Farmer Interaction">
+                    <div class="gallery-overlay">
+                        <h4 class="font-bold text-lg">Community Training</h4>
+                        <p class="text-sm text-sage-200">Empowering local farmers.</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal"><img
+                        src="https://images.unsplash.com/photo-1472289065668-ce650ac443d2?auto=format&fit=crop&q=80&w=800"
+                        alt="Lab Research">
+                    <div class="gallery-overlay">
+                        <h4 class="font-bold text-lg">Innovation Lab</h4>
+                        <p class="text-sm text-sage-200">Genetic purity testing.</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal"><img
+                        src="https://images.unsplash.com/photo-1628352081506-83c43123ed6d?auto=format&fit=crop&q=80&w=800"
+                        alt="Conference Speaking">
+                    <div class="gallery-overlay">
+                        <h4 class="font-bold text-lg">Global Summit</h4>
+                        <p class="text-sm text-sage-200">Keynote on Sustainable Ag.</p>
+                    </div>
+                </div>
+                <div class="gallery-item reveal"><img
+                        src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=800"
+                        alt="Harvest">
+                    <div class="gallery-overlay">
+                        <h4 class="font-bold text-lg">Golden Harvest</h4>
+                        <p class="text-sm text-sage-200">Celebrating yield success.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

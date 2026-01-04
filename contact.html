@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Dr. Lakshmikant Pandey.">
+    <title>Contact | SEEDMAN®</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Bricolage+Grotesque:wght@700;800&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: { 50: '#f6f7f6', 100: '#e3e8e5', 200: '#c5d2cc', 300: '#9cb3a8', 400: '#739586', 500: '#537a6b', 600: '#406054', 700: '#354d44', 800: '#2d3f38', 900: '#263530' },
+                        stone: { 50: '#fafaf9', 850: '#1f1d1b' }
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'], heading: ['"Bricolage Grotesque"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navs -->
+    <nav class="nav-vertical">
+        <a href="index.html" class="nav-item" aria-label="Home">
+            <i data-lucide="home" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Home</span>
+        </a>
+        <a href="profile.html" class="nav-item" aria-label="Profile">
+            <i data-lucide="user" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Profile</span>
+        </a>
+        <a href="work.html" class="nav-item" aria-label="Work">
+            <i data-lucide="briefcase" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Work</span>
+        </a>
+        <a href="insights.html" class="nav-item" aria-label="Insights">
+            <i data-lucide="file-text" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Insights</span>
+        </a>
+        <a href="contact.html" class="nav-item active" aria-label="Contact">
+            <i data-lucide="mail" class="w-5 h-5"></i>
+            <span class="nav-tooltip">Contact</span>
+        </a>
+    </nav>
+    <nav class="nav-mobile">
+        <a href="index.html" class="dock-item"><i data-lucide="home" class="w-5 h-5"></i><span>Home</span></a>
+        <a href="profile.html" class="dock-item"><i data-lucide="user" class="w-5 h-5"></i><span>Profile</span></a>
+        <a href="work.html" class="dock-item"><i data-lucide="briefcase" class="w-5 h-5"></i><span>Work</span></a>
+        <a href="insights.html" class="dock-item"><i data-lucide="file-text"
+                class="w-5 h-5"></i><span>Insights</span></a>
+        <a href="contact.html" class="dock-item active"><i data-lucide="mail"
+                class="w-5 h-5"></i><span>Contact</span></a>
+    </nav>
+
+    <div class="fixed top-6 left-6 md:top-8 md:left-12 z-50">
+        <a href="index.html"
+            class="text-xl md:text-2xl font-bold font-heading text-sage-900 tracking-tighter">SEEDMAN<span
+                class="text-amber-500">®</span></a>
+    </div>
+
+    <!-- Contact & Footer -->
+    <section class="min-h-screen bg-sage-900 text-white flex items-center">
+        <div class="container mx-auto px-6 py-24">
+            <div class="grid md:grid-cols-2 gap-16 mb-20 reveal">
+                <div class="reveal">
+                    <h2 class="text-4xl md:text-6xl font-heading font-bold mb-6">Let's Cultivate Growth</h2>
+                    <p class="text-sage-200 text-lg mb-8 leading-relaxed">Interested in strategic bio-agri partnerships
+                        or consulting? I'm always open to discussing innovations that can shape the future of
+                        agriculture.</p>
+                    <div class="flex flex-col gap-4 max-w-md">
+                        <a href="mailto:lkpande@gmail.com"
+                            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10">
+                            <div
+                                class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center text-white">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div><span class="font-bold tracking-wide">lkpande@gmail.com</span>
+                        </a>
+                        <a href="tel:+919811159584"
+                            class="flex items-center gap-4 p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-colors border border-white/10">
+                            <div class="w-10 h-10 rounded-full bg-sage-500 flex items-center justify-center text-white">
+                                <i data-lucide="phone" class="w-5 h-5"></i>
+                            </div><span class="font-bold tracking-wide">+91-9811159584</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- Links -->
+                <div class="grid grid-cols-2 gap-8 reveal self-center">
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-amber-500">Navigation</h4>
+                        <ul class="space-y-3 text-sage-300">
+                            <li><a href="profile.html" class="hover:text-white transition-colors">Profile</a></li>
+                            <li><a href="work.html" class="hover:text-white transition-colors">Work</a></li>
+                            <li><a href="insights.html" class="hover:text-white transition-colors">Insights</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-6 text-amber-500">Network</h4>
+                        <ul class="space-y-3 text-sage-300">
+                            <li><a href="#" class="hover:text-white transition-colors">LinkedIn</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">AIMA</a></li>
+                            <li><a href="#" class="hover:text-white transition-colors">FICCI</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-sage-400 reveal">
+                <p>&copy; 2024 SEEDMAN® | Dr. Lakshmikant Pandey. All rights reserved.</p>
+                <div class="mt-4 md:mt-0 flex gap-4"><a href="#" class="hover:text-white">Privacy
+                        Policy</a><span>•</span><a href="#" class="hover:text-white">Terms of Use</a></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
